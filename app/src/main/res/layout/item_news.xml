@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_5sdp"
     android:padding="@dimen/_7sdp"
+    android:backgroundTint="#838383"
     android:background="@drawable/rounded_shape"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -22,6 +23,7 @@
         android:id="@+id/shorttextNews"
         android:layout_width="0dp"
         android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
         android:layout_marginStart="@dimen/_5sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageNews"

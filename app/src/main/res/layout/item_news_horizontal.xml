@@ -4,13 +4,14 @@
     android:layout_height="@dimen/_130sdp"
     android:layout_margin="@dimen/_5sdp"
     android:padding="@dimen/_7sdp"
+    android:backgroundTint="#838383"
     android:background="@drawable/rounded_shape"
     android:layout_marginBottom="@dimen/_5sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/imageNews"
-        android:layout_width="@dimen/_90sdp"
+        android:layout_width="@dimen/_110sdp"
         android:layout_height="@dimen/_90sdp"
         android:scaleType="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +24,7 @@
         android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/roboto"
         android:gravity="center"
+        android:textColor="@color/white"
         android:layout_marginStart="@dimen/_5sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageNews"
