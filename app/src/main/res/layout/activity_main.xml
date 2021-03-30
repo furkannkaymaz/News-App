@@ -35,7 +35,7 @@
         android:layout_height="0dp"
         android:fillViewport="true"
         android:padding="@dimen/_10sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topMenu">
@@ -162,32 +162,23 @@
                 android:id="@+id/newsRecyvviewHorizontel"
                 android:layout_width="match_parent"
                 android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
                 android:background="@color/appBg"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/tvNews2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
 
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </ScrollView>
 
-    <TextView
-        android:id="@+id/bottommenu"
-        android:layout_width="match_parent"
-        android:background="#F44336"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:text="Son dakika"
-        android:textSize="@dimen/_16sdp"
-        android:fontFamily="@font/roboto"
-        app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 

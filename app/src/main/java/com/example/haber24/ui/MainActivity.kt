@@ -7,6 +7,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import com.ddtech.ddverifier.managers.Globals
@@ -47,13 +48,11 @@ class MainActivity : AppCompatActivity() {
                 val pagerSnapHelper = PagerSnapHelper()
                 pagerSnapHelper.attachToRecyclerView(binding.newsRecyvview)
 
-                binding.newsRecyvviewHorizontel.layoutManager = LinearLayoutManager(
-                    this,
-                    LinearLayoutManager.VERTICAL,
-                    false
-                )
+                binding.newsRecyvviewHorizontel.layoutManager = GridLayoutManager(this,2,LinearLayoutManager.VERTICAL,false)
+                binding.newsRecyvviewHorizontel.setHasFixedSize(true)
                 binding.newsRecyvviewHorizontel.adapter = NewsAdapterH(news)
-                pagerSnapHelper.attachToRecyclerView(binding.newsRecyvviewHorizontel)
+
+
 
             },
             {

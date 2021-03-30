@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/_130sdp"
     android:layout_margin="@dimen/_5sdp"
     android:padding="@dimen/_7sdp"
     android:background="@drawable/rounded_shape"
+    android:layout_marginBottom="@dimen/_5sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/imageNews"
-        android:layout_width="@dimen/_70sdp"
-        android:layout_height="@dimen/_70sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="@dimen/_5sdp"
-        app:layout_constraintEnd_toStartOf="@id/shorttextNews"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/shorttextNews"
         android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/roboto"
+        android:gravity="center"
         android:layout_marginStart="@dimen/_5sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imageNews"
-        app:layout_constraintTop_toTopOf="@id/imageNews"
+        app:layout_constraintTop_toBottomOf="@id/imageNews"
+        app:layout_constraintStart_toStartOf="parent"
         android:maxLines="3"
+        app:layout_goneMarginBottom="@dimen/_5sdp"
         android:layout_marginBottom="@dimen/_5sdp"
-        app:layout_constraintBottom_toBottomOf="@id/imageNews"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:ellipsize="end"
         android:layout_height="0dp"/>
 

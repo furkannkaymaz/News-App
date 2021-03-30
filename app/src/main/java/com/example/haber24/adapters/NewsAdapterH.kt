@@ -54,7 +54,7 @@ class NewsAdapterH (private var spots: ArrayList<ItemList>)
             .transform(CenterCrop(), RoundedCorners(20))
             .into(holder.photo)
 
-        holder.text.text= spot.shortText
+        holder.text.text= spot.publishDate
 
 
         holder.photo.setOnClickListener {
