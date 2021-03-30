@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Haber24</string>
+
+    <string name="news"><u>Haberler</u></string>
+</resources>
